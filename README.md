@@ -9,9 +9,12 @@ Show pages
 2) Type templates
 3) Personal card collection
 4) Card collections by set
+5) Each card
+6) Trainers (friends)
+7) Trainers favorites
 
 Features
-1) Favorite cards
-2) Mark shinies
-3) Journal
+1) Mark shinies
+2) Journal
+3) Each card qty, market value, favorite
  -->
