@@ -34,7 +34,6 @@ app.use(methodOverride("_method"));
 const validateCampground = (req, res, next) => {
   const { error } = campgroundSchema.validate(req.body);
   if (error) {
-    // Maps the elements of error.details into a single string message, joined by commas if there is more than one error
     const msg = error.details.map((el) => el.message).join(",");
     throw new ExpressError(400, msg);
   } else {
