@@ -72,8 +72,6 @@ app.post(
   "/campgrounds",
   validateCampground,
   catchAsync(async (req, res, next) => {
-    // Original error handling for req.body.campground before Joi schema implementation
-    // if (!req.body.campground) throw new ExpressError(400, "Invalid Campground Data");
     const campground = new Campground(req.body.campground);
     await campground.save();
     res.redirect(`/campgrounds/${campground._id}`);
