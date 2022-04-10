@@ -56,6 +56,11 @@ app.get("/", (req, res) => {
   res.render("home");
 });
 
+// Pokédex
+app.get("/pokedex", (req, res) => {
+  res.render("pokedex/pokedex");
+});
+
 app.get(
   "/campgrounds",
   catchAsync(async (req, res) => {
