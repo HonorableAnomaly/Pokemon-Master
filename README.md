@@ -15,6 +15,7 @@ Show pages
 8) Atlas
 9) Type table
 10) Ball types
+11) Pokémon stat comparison
 
 Features
 1) Mark shinies
