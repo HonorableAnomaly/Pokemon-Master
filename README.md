@@ -27,6 +27,7 @@ Show pages
 8) Atlas
 9) Type table
 10) Ball types
+11) Pokémon stat comparison
 
 Features
 1) Mark shinies
@@ -34,4 +35,5 @@ Features
 3) Each card qty, market value, favorite
 4) What Pokémon can be found in a map area and a way to mark them off if it reads your collection contains it
 5) What balls were used to catch your Pokémon
+6) Dark app theme
  -->
