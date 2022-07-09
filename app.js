@@ -13,7 +13,7 @@ mongoose.connect("mongodb://localhost:27017/pokemon-master"),
   {
     useNewUrlParser: true,
     useCreateIndex: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   };
 
 const db = mongoose.connection;
@@ -59,6 +59,16 @@ app.get("/", (req, res) => {
 // Pokédex
 app.get("/pokedex", (req, res) => {
   res.render("pokedex/pokedex");
+});
+
+// Collections
+app.get("/collections", (req, res) => {
+  res.render("collections/index");
+});
+
+// Trainers
+app.get("/trainers", (req, res) => {
+  res.render("trainers/trainers");
 });
 
 app.get(
