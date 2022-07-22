@@ -19,6 +19,14 @@
         <a class="nav-link" href="/collections">Collections</a>
         <a class="nav-link" href="/trainers">Trainers</a>
       </div>
+      <div class="navbar-nav ml-auto">
+        <% if(!currentUser) { %>
+        <a class="nav-link" href="/login">Log In</a>
+        <a class="nav-link" href="/register">Sign Up</a>
+        <% } else { %>
+        <a class="nav-link p-2" href="/logout">Log Out</a>
+        <% } %>
+      </div>
     </div>
   </div>
 </nav>
