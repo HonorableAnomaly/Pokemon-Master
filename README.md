@@ -38,4 +38,5 @@ Features
 5) What balls were used to catch your Pokémon
 6) Dark app theme
 7) Search function in Pokédex for region, type, legendary, starter, mega, g-max
+8) Input/change event listener for nametag username and clantag clan name when registering
  -->
