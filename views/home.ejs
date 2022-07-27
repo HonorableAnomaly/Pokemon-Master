@@ -17,9 +17,37 @@
 
   <body class="d-flex text-center text-white bg-dark">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <!-- Parallax -->
-
       <main class="px-3">
+        <header class="mb-auto">
+          <div>
+            <h3 class="float-md-left mb-0">Pokémon Master</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-right">
+              <a href="#" class="nav-link active" aria-current="page">Home</a>
+              <a href="/pokedex" class="nav-link" aria-current="page">Pokédex</a>
+              <% if(!currentUser) { %>
+              <a href="/login" class="nav-link" aria-current="page">Log In</a>
+              <a href="/register" class="nav-link" aria-current="page">Register</a>
+              <% } else { %>
+              <a href="/logout" class="nav-link" aria-current="page">Log Out</a>
+              <% } %>
+            </nav>
+          </div>
+        </header>
+
+        <h1>Pokémon Master</h1>
+        <br />
+        <p class="lead">
+          Welcome to Pokémon Master!
+          <br />
+          <br />
+          Explore the world of Pokémon, journaling your discoveries as you learn all you can on your journey to becoming a Pokémon Master!
+          <br />
+          <br />
+          You can even meet other trainers and share your experience in the world of Pokémon with your friends!
+        </p>
+
+        <!-- Parallax -->
+
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500" preserveAspectRatio="xMidYMax slice">
           <defs>
             <!-- Scene 1 Gradient -->
@@ -427,38 +455,10 @@
         </svg>
 
         <div class="scrollElement"></div>
-
-        <header class="mb-auto">
-          <div>
-            <h3 class="float-md-left mb-0">Pokémon Master</h3>
-            <nav class="nav nav-masthead justify-content-center float-md-right">
-              <a href="#" class="nav-link active" aria-current="page">Home</a>
-              <a href="/pokedex" class="nav-link" aria-current="page">Pokédex</a>
-              <% if(!currentUser) { %>
-              <a href="/login" class="nav-link" aria-current="page">Log In</a>
-              <a href="/register" class="nav-link" aria-current="page">Register</a>
-              <% } else { %>
-              <a href="/logout" class="nav-link" aria-current="page">Log Out</a>
-              <% } %>
-            </nav>
-          </div>
-        </header>
-
-        <h1>Pokémon Master</h1>
         <br />
-        <p class="lead">
-          Welcome to Pokémon Master!
-          <br />
-          <br />
-          Explore the world of Pokémon, journaling your discoveries as you learn all you can on your journey to becoming a Pokémon Master!
-          <br />
-          <br />
-          You can even meet other trainers and share your experience in the world of Pokémon with your friends!
-        </p>
-        <br />
-        <a href="/pokedex" id="button" class="btn btn-lg btn-secondary font-weight-bold">Discover Pokémon!</a>
 
         <a href="/collections" class="btn btn_works">My Collections</a>
+        <a href="/pokedex" id="button" class="btn btn-lg btn-secondary font-weight-bold">Discover Pokémon!</a>
         <button class="btn" id="fullscr">Go Fullscreen</button>
       </main>
 
