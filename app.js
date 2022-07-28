@@ -33,7 +33,7 @@ mongoose.connect(dbUrl, {
   useNewUrlParser: true,
   // No longer supported
   // useCreateIndex: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
   // Used to be necessary to get rid of a depracation warning
   // useFindAndModify: false
 });
@@ -58,7 +58,7 @@ app.use(mongoSanitize());
 const store = new MongoStore({
   mongoUrl: dbUrl,
   secret: "thisshouldbeabettersecret",
-  touchAfter: 24 * 3600
+  touchAfter: 24 * 3600,
 });
 
 store.on("error", function (e) {
@@ -76,8 +76,8 @@ const sessionConfig = {
     httpOnly: true,
     // secure: true,
     expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
-    maxAge: 1000 * 60 * 60 * 24 * 7
-  }
+    maxAge: 1000 * 60 * 60 * 24 * 7,
+  },
 };
 
 // Session must be used before 'passport.session'
@@ -138,6 +138,14 @@ app.get("/trainers", (req, res) => {
 
 app.all("*", (req, res, next) => {
   next(new ExpressError(404, "Page Not Found"));
+});
+
+// Parallax 404
+app.use((err, req, res, next) => {
+  const { statusCode = 404 } = err;
+  // if (!err.message) err.message = "Oh no, something went wrong!";
+  // res.status(statusCode);
+  res.render("error404");
 });
 
 app.use((err, req, res, next) => {

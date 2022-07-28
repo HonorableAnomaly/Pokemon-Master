@@ -12,23 +12,3 @@ module.exports.isLoggedIn = (req, res, next) => {
   }
   next();
 };
-
-module.exports.validateCampground = (req, res, next) => {
-  const { error } = campgroundSchema.validate(req.body);
-  if (error) {
-    const msg = error.details.map((el) => el.message).join(",");
-    throw new ExpressError(400, msg);
-  } else {
-    next();
-  }
-};
-
-module.exports.isAuthor = catchAsync(async (req, res, next) => {
-  const { id } = req.params;
-  const campground = await Campground.findById(id);
-  if (!campground.author.equals(req.user._id)) {
-    req.flash("error", "That's not your land!");
-    return res.redirect(`/campgrounds/${id}`);
-  }
-  next();
-});
