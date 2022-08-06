@@ -1,8 +1,16 @@
-# Pokémon Master
+# <img src="https://i.pinimg.com/originals/74/ff/62/74ff629b356b7a89e4a8bf660c21e078.png" width=25> Pokémon Master
 
 <div>
-A Pokémon collection database and explorer's journal for your journey to becoming a Pokémon Master
+A Pokémon collection database and explorer's journal for your journey to becoming a Pokémon Master!
 </div>
+
+***
+
+<div id="MainImage" align=center>
+  <img src="https://media1.giphy.com/media/7ISIRaCMrgFfa/giphy.gif?cid=ecf05e47w915axpta3995ufbudabapx3f3s9cvhup8yy8nys&rid=giphy.gif&ct=g">
+</div>
+
+***
 
 <div>
 <h2>Credits</h2>
