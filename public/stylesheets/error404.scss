@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow");
-
 $in-out-cubic: cubic-bezier(0.65, 0.05, 0.36, 1);
-
 @mixin transform($transform...) {
   -webkit-transform: $transform;
   -moz-transform: $transform;

@@ -4,7 +4,8 @@
   "description": "A Pokémon collection database and explorer's journal for your journey to becoming a Pokémon Master!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "node-sass -w public/stylesheets/error404.scss public/stylesheets/error404.css"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "mongoose": "^6.2.9",
     "multer": "^1.4.5-lts.1",
     "multer-storage-cloudinary": "^4.0.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
