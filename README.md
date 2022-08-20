@@ -14,7 +14,7 @@ A Pokémon collection database and explorer's journal for your journey to becomi
 
 <div>
 <h2>Credits</h2>
-<p>Thanks to HybridShivam, to PokéAPI.co. & Veekun for the data, Bulbapedia for the images, duiker101 for the type icons and of course to Nintendo, Game Freak, and The Pokémon Company for making such an awesome series of games.</p>
+<p>Thanks to HybridShivam, to PokéAPI.co. & Veekun for the data, Bulbapedia for the images, duiker101 for the type icons, Zel-Duh(DeviantArt) for the pokéball gif and of course to Nintendo, Game Freak, and The Pokémon Company for making such an awesome series of games.</p>
 </div>
 
 <div>
