@@ -3,11 +3,18 @@ h2 {
   text-align: center;
 }
 
-.pokemon {
-  display: inline-block;
+.pokedex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   text-align: center;
 }
 
-.pokemon img {
-  display: block;
+.pokedex div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
